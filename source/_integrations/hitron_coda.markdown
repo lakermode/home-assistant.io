@@ -8,7 +8,7 @@ ha_release: 0.58
 ---
 
 This integration offers presence detection by examining devices connected to a [Rogers Hitron CODA](https://www.rogers.com/customer/support/article/wi-fi-password-hitron-coda4582-cgn3amr-cgnm3552-cgn3acr-cgn3)
-or [Shaw Hitron CGNM](https://community.shaw.ca/docs/DOC-4066) Router.
+or [Shaw Hitron CGNM](https://community.shaw.ca/docs/DOC-4066) or [Hitron CGNV4] (https://www.hitrontech.com/product/cgnv4/) Router.
 
 To use a Hitron router in your installation, add the following to your `configuration.yaml` file:
 
@@ -36,7 +36,7 @@ password:
   required: true
   type: string
 type:
-  description: The internet provider for the modem; "rogers" or "shaw". Defaults to "rogers".
+  description: The internet provider for the modem; "rogers", "shaw" or "cgnv4". Defaults to "rogers".
   required: false
   type: string
 {% endconfiguration %}
